@@ -14,6 +14,6 @@ public class TutorialMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		tutorialmod.info("tutorialmod loading!");
+		tutorialmod.info(TutorialMod.MOD_ID + " loading!");
 	}
 }
