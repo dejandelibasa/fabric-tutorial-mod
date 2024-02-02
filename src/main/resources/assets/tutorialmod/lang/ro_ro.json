@@ -1,5 +1,7 @@
 {
   "item.tutorialmod.ruby": "Rubin",
-  "item.tutorialmod.raw_ruby": "Rubin Neșlefuit",
+  "item.tutorialmod.raw_ruby": "Rubin neșlefuit",
+  "block.tutorialmod.ruby_block": "Bloc de rubine",
+  "block.tutorialmod.raw_ruby_block": "Bloc de rubine brute",
   "itemgroup.ruby": "Grupul rubinelor din tutorial"
 }

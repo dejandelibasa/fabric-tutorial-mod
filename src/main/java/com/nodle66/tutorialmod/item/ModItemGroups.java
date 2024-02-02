@@ -1,7 +1,9 @@
 package com.nodle66.tutorialmod.item;
 
+import com.nodle66.tutorialmod.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import com.nodle66.tutorialmod.TutorialMod;
+import net.minecraft.block.Blocks;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
@@ -16,15 +18,16 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.ruby"))
                     .icon(() -> new ItemStack(ModItems.RUBY)).entries((displayContext, entries) -> {
                         entries.add(ModItems.RUBY);
+                        entries.add(ModBlocks.RUBY_BLOCK);
                         entries.add(ModItems.RAW_RUBY);
-
+                        entries.add(ModBlocks.RAW_RUBY_BLOCK);
                         entries.add(Items.DIAMOND);
-
+                        entries.add(Blocks.DIAMOND_BLOCK);
 
                     }).build());
 
 
     public static void registerItemGroups() {
-        TutorialMod.LOGGER.info("Registering Item Groups for " + TutorialMod.MOD_ID);
+        TutorialMod.Logger("Registering Item Groups for " + TutorialMod.MOD_ID);
     }
 }

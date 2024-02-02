@@ -23,7 +23,7 @@ public class ModItems {
         return Registry.register(Registries.ITEM, new Identifier(TutorialMod.MOD_ID, name), item);
     }
     public static void RegisterModItems() {
-        TutorialMod.LOGGER.info("Registering mod items for " + TutorialMod.MOD_ID);
+        TutorialMod.Logger("Registering mod items for " + TutorialMod.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.REDSTONE).register(ModItems::addItemsToRedstoneItemGroup);
     }
