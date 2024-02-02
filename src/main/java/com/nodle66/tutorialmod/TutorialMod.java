@@ -1,5 +1,7 @@
 package com.nodle66.tutorialmod;
 
+import com.nodle66.tutorialmod.item.ModItemGroups;
+import com.nodle66.tutorialmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -10,10 +12,12 @@ public class TutorialMod implements ModInitializer {
 	// It is considered best practice to use your mod id as the logger's name.
 	// That way, it's clear which mod wrote info, warnings, and errors.
 	public static final String MOD_ID = "tutorialmod";
-    public static final Logger tutorialmod = LoggerFactory.getLogger(MOD_ID);
+    public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
 	@Override
 	public void onInitialize() {
-		tutorialmod.info(TutorialMod.MOD_ID + " loading!");
+		LOGGER.info(TutorialMod.MOD_ID + " loading!");
+		ModItemGroups.registerItemGroups();
+		ModItems.RegisterModItems();
 	}
 }
