@@ -1,5 +1,8 @@
 {
   "item.tutorialmod.metal_detector": "Metal detector",
+  "item.tutorialmod.uranium": "Uranium",
+  "block.tutorialmod.sound_block": "Xylophone block",
+  "item.tutorialmod.meatbread": "Meatbread",
   "item.tutorialmod.ruby": "Ruby",
   "item.tutorialmod.raw_ruby": "Raw Ruby",
   "block.tutorialmod.ruby_block": "Block of Ruby",

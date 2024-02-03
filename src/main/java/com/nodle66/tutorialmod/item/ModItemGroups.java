@@ -18,12 +18,15 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.ruby"))
                     .icon(() -> new ItemStack(ModItems.RUBY)).entries((displayContext, entries) -> {
                         entries.add(ModItems.METAL_DETECTOR);
+                        entries.add(ModItems.URANIUM);
                         entries.add(ModItems.RUBY);
                         entries.add(ModBlocks.RUBY_BLOCK);
                         entries.add(ModItems.RAW_RUBY);
                         entries.add(ModBlocks.RAW_RUBY_BLOCK);
                         entries.add(Items.DIAMOND);
                         entries.add(Blocks.DIAMOND_BLOCK);
+                        entries.add(ModBlocks.SOUND_BLOCK);
+                        entries.add(ModItems.MEATBREAD);
 
                     }).build());
 

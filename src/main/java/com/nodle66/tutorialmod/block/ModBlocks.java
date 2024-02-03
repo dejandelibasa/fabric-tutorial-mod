@@ -1,6 +1,7 @@
 package com.nodle66.tutorialmod.block;
 
 import com.nodle66.tutorialmod.TutorialMod;
+import com.nodle66.tutorialmod.block.custom.SoundBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
@@ -28,6 +29,8 @@ public class ModBlocks {
                     sounds(BlockSoundGroup.AMETHYST_BLOCK)));
     public static final Block RAW_RUBY_BLOCK = registerBlock("raw_ruby_block",
             new ExperienceDroppingBlock(UniformIntProvider.create(3, 7), FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).mapColor(MapColor.RED).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+    public static final Block SOUND_BLOCK = registerBlock("sound_block",
+            new SoundBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, new Identifier(TutorialMod.MOD_ID, name), block);
