@@ -7,6 +7,9 @@
   "item.tutorialmod.raw_ruby": "Rubin neșlefuit",
   "block.tutorialmod.ruby_block": "Bloc de rubine",
   "block.tutorialmod.raw_ruby_block": "Bloc de rubine brute",
+  "blocks.tutorialmod.ruby_stairs": "Scări din rubin",
+  "blocks.tutorialmod.ruby_slab": "Felie de rubin",
+  "blocks.tutorialmod.ruby_button": "Buton din rubin",
   "itemgroup.ruby": "Grupul rubinelor din tutorial",
   "tooltip.tutorialmod.metal_detector.tooltip": "Descoperă minereuri prețioase sub pământ"
 }

@@ -27,6 +27,9 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.RUBY_BLOCK);
         addDrop(ModBlocks.SOUND_BLOCK);
         addDrop(ModBlocks.RAW_RUBY_BLOCK, modOreDrops(ModBlocks.RAW_RUBY_BLOCK, ModItems.RAW_RUBY, UniformLootNumberProvider.create(2.0f, 5.0f)));
+        addDrop(ModBlocks.RUBY_BUTTON);
+        addDrop(ModBlocks.RUBY_SLAB, slabDrops(ModBlocks.RUBY_SLAB));
+        addDrop(ModBlocks.RUBY_STAIRS);
     }
 
     public LootTable.Builder modOreDrops(Block drop, Item item, UniformLootNumberProvider dropNumbers) {
