@@ -1,6 +1,7 @@
-// 1.20.4	2024-02-06T12:23:34.5584358	Tutorial Mod/Tags for minecraft:block
-d872b12f649ed3f566b048e9c01ecb39a8b93143 data\minecraft\tags\blocks\mineable\pickaxe.json
+// 1.20.4	2024-02-06T21:43:10.7283412	Tutorial Mod/Tags for minecraft:block
 090afd1457b32fdd36d347afa6679cf48a814de9 data\minecraft\tags\blocks\needs_iron_tool.json
+d872b12f649ed3f566b048e9c01ecb39a8b93143 data\minecraft\tags\blocks\mineable\pickaxe.json
+05ee2833b49f81b92d8e7bdfc071596fc9c95a13 data\minecraft\tags\blocks\needs_stone_tool.json
 c0c21dd37bc5740a0fd4b8d23b548084594c6c2e data\minecraft\tags\blocks\mineable\axe.json
 dd5e2483a2da5d31fb9ba476363db5e8ebbb3d06 data\tutorialmod\tags\blocks\metal_detector_detectable_blocks.json
-05ee2833b49f81b92d8e7bdfc071596fc9c95a13 data\minecraft\tags\blocks\needs_stone_tool.json
+f61e4dcb2b01155da59aa7e3f1e453cfdb0f873a data\minecraft\tags\blocks\rails.json

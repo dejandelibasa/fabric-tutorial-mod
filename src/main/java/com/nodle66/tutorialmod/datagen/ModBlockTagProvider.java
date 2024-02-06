@@ -36,5 +36,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.SUPER_RAIL);
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.RUBY_BLOCK);
+
+        getOrCreateTagBuilder(BlockTags.RAILS)
+                .add(ModBlocks.SUPER_RAIL);
     }
 }

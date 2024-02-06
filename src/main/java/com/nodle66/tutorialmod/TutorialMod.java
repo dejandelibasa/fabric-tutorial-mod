@@ -5,8 +5,10 @@ import com.nodle66.tutorialmod.item.ModItemGroups;
 import com.nodle66.tutorialmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
+import net.minecraft.entity.vehicle.MinecartEntity;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.spongepowered.asm.mixin.Mixin;
 
 public class TutorialMod implements ModInitializer {
 	// This logger is used to write text to the console and the log file.
