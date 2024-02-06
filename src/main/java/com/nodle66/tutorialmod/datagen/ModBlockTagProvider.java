@@ -26,12 +26,14 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .forceAddTag(BlockTags.REDSTONE_ORES);
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.RAW_RUBY_BLOCK)
-                .add(ModBlocks.RUBY_BLOCK);
+                .add(ModBlocks.RUBY_BLOCK)
+                .add(ModBlocks.SUPER_RAIL);
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
                 .add(ModBlocks.SOUND_BLOCK);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
-                .add(ModBlocks.RAW_RUBY_BLOCK);
+                .add(ModBlocks.RAW_RUBY_BLOCK)
+                .add(ModBlocks.SUPER_RAIL);
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.RUBY_BLOCK);
     }

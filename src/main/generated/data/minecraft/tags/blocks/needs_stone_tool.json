@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "tutorialmod:raw_ruby_block"
+    "tutorialmod:raw_ruby_block",
+    "tutorialmod:super_rail"
   ]
 }

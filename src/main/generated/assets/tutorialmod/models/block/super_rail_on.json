@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/rail_flat",
+  "textures": {
+    "rail": "tutorialmod:block/super_rail_on"
+  }
+}

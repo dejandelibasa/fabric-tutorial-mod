@@ -2,6 +2,7 @@ package com.nodle66.tutorialmod.block;
 
 import com.nodle66.tutorialmod.TutorialMod;
 import com.nodle66.tutorialmod.block.custom.SoundBlock;
+import com.nodle66.tutorialmod.block.custom.SuperRailBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
@@ -30,6 +31,7 @@ public class ModBlocks {
     public static final Block RUBY_STAIRS = registerBlock("ruby_stairs", new StairsBlock(ModBlocks.RUBY_BLOCK.getDefaultState(), FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
     public static final Block RUBY_SLAB = registerBlock("ruby_slab", new SlabBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
     public static final Block RUBY_BUTTON = registerBlock("ruby_button", new ButtonBlock(BlockSetType.IRON, 10, FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
+    public static final Block SUPER_RAIL = registerBlock("super_rail", new SuperRailBlock(FabricBlockSettings.copyOf(Blocks.POWERED_RAIL)));
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, new Identifier(TutorialMod.MOD_ID, name), block);

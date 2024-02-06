@@ -35,6 +35,13 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.STONE), conditionsFromItem(Items.STONE))
                 .criterion(hasItem((ModItems.RUBY)), conditionsFromItem(ModItems.RUBY))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.URANIUM)));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.SUPER_RAIL, 16)
+                .pattern("SRS")
+                .input('S', Items.STICK)
+                .input('R', ModItems.RUBY)
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .criterion(hasItem((ModItems.RUBY)), conditionsFromItem(ModItems.RUBY))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.SUPER_RAIL)));
 
         ShapelessRecipeJsonBuilder
                 .create(RecipeCategory.REDSTONE, ModBlocks.RUBY_BUTTON, 1)

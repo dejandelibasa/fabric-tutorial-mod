@@ -31,7 +31,7 @@ public class ModItemGroups {
                         entries.add(Blocks.DIAMOND_BLOCK);
                         entries.add(ModBlocks.SOUND_BLOCK);
                         entries.add(ModItems.MEATBREAD);
-
+                        entries.add(ModBlocks.SUPER_RAIL);
                     }).build());
 
 
