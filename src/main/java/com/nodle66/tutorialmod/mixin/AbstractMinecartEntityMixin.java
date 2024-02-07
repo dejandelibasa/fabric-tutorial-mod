@@ -29,8 +29,9 @@ public abstract class AbstractMinecartEntityMixin extends Entity {
                     target = "Lnet/minecraft/entity/vehicle/AbstractMinecartEntity;moveOnRail(Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/BlockState;)V",
                     shift = At.Shift.AFTER),
             locals = LocalCapture.CAPTURE_FAILHARD)
-    private void onSuperRail(CallbackInfo ci, int i, int j, int k, BlockState blockState, BlockPos blockPos) {
+    private void onSuperRail(CallbackInfo ci, int i, int j, int k, BlockPos blockPos) {
         AbstractMinecartEntity cast = (AbstractMinecartEntity) (Object) this;
+        BlockState blockState = cast.getWorld().getBlockState(blockPos);
         if(blockState.isOf(ModBlocks.SUPER_RAIL)) {
             cast.onActivatorRail(i, j, k, blockState.get(PoweredRailBlock.POWERED));
         }
