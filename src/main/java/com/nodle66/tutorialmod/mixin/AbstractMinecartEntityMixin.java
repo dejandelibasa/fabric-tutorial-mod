@@ -17,7 +17,6 @@ import org.spongepowered.asm.mixin.injection.callback.LocalCapture;
 
 @Mixin({AbstractMinecartEntity.class})
 public abstract class AbstractMinecartEntityMixin extends Entity {
-    @Shadow public abstract void onActivatorRail(int x, int y, int z, boolean powered);
 
     public AbstractMinecartEntityMixin(EntityType<?> type, World world) {
         super(type, world);
@@ -36,4 +35,9 @@ public abstract class AbstractMinecartEntityMixin extends Entity {
             cast.onActivatorRail(i, j, k, blockState.get(PoweredRailBlock.POWERED));
         }
     }
+
+    /*
+    TODO: inject into protected void moveOnRail(BlockPos pos, BlockState state) { because onActivatorRail from tick is
+     for the dismounting rails woopsie
+     */
 }
