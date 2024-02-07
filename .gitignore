@@ -42,3 +42,6 @@ replay_*.log
 # custom mod textures
 mod textures
 mod models
+
+#generated cache idk why even store it bruh
+src/main/generated/.cache

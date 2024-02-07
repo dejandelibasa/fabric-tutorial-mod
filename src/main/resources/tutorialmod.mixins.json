@@ -3,7 +3,8 @@
 	"package": "com.nodle66.tutorialmod.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-		"ExampleMixin"
+		"ExampleMixin",
+		"AbstractMinecartEntityMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

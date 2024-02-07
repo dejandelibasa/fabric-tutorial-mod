@@ -7,10 +7,10 @@
   "item.tutorialmod.raw_ruby": "Raw Ruby",
   "block.tutorialmod.ruby_block": "Block of Ruby",
   "block.tutorialmod.raw_ruby_block": "Block of Raw Ruby",
-  "blocks.tutorialmod.ruby_stairs": "Ruby stairs",
-  "blocks.tutorialmod.ruby_slab": "Ruby slab",
-  "blocks.tutorialmod.ruby_button": "Ruby button",
-  "blocks.tutorialmod.super_rail": "Super Rail",
+  "block.tutorialmod.ruby_stairs": "Ruby stairs",
+  "block.tutorialmod.ruby_slab": "Ruby slab",
+  "block.tutorialmod.ruby_button": "Ruby button",
+  "block.tutorialmod.super_rail": "Super Rail",
   "itemgroup.ruby": "Ruby tutorial group",
   "tooltip.tutorialmod.metal_detector.tooltip": "Finds valuables underground"
 }
