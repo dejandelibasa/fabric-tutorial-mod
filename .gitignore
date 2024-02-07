@@ -43,5 +43,5 @@ replay_*.log
 mod textures
 mod models
 
-#generated cache idk why even store it bruh
-src/main/generated/.cache
+#generated all the generated stuff cuz why the hell not remake it every time you fetch like bruh we lightweight up in here
+src/main/generated
