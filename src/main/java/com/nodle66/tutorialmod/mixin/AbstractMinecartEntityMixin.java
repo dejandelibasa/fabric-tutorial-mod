@@ -7,6 +7,8 @@ import com.nodle66.tutorialmod.block.custom.SuperRailBlock;
 import net.minecraft.block.AbstractRailBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.enums.RailShape;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.text.Text;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
@@ -44,6 +46,8 @@ public abstract class AbstractMinecartEntityMixin extends Entity {
             Vec3d vec3d5 = cast.getVelocity();
             double w = vec3d5.horizontalLength();
             if (w > 0.01) {
+                PlayerEntity debugPlayer = getWorld().getClosestPlayer(pos.getX(), pos.getY(), pos.getZ(), 32, false);
+                debugPlayer.sendMessage(Text.literal("X:" + vec3d5.x + " Z:" + vec3d5.z));
                 cast.setVelocity(vec3d5.add(vec3d5.x / w * 0.5, 0.0, vec3d5.z / w * 0.5));
             } else {
                 Vec3d vec3d6 = cast.getVelocity();
